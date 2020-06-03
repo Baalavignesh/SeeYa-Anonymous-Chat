@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       Text(
-                        'Sign In to Chat with Annoanymous Person',
+                        'Sign In to Chat with Anonymous Person',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontFamily: 'Hind',

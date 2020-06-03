@@ -12,7 +12,7 @@ class _ChatHomeScreenState extends State<ChatHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         Column(
           children: [
@@ -56,12 +56,14 @@ class _ChatHomeScreenState extends State<ChatHomeScreen> {
                 ),
               ),
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: friendUser,
-            ),
           ],
         ),
+        Expanded(
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            children: friendUser,
+          ),
+        )
       ],
     );
   }

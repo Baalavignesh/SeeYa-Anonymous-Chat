@@ -26,10 +26,12 @@ class _AllUserScreenState extends State<AllUserScreen> {
             ),
           ],
         ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: allUser,
-        ),
+        Expanded(
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            children: allUser,
+          ),
+        )
       ],
     );
   }
